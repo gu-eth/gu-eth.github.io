@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Login - Eleven</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+    
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Eleven</h1>
+    <input type="password" id="senha" placeholder="Digite a senha">
+    <button onclick="checkPassword()">Entrar</button>
+  </div>
+
+  <script>
+    function checkPassword() {
+      if (document.getElementById('senha').value == 'elevenfile2024') {
+        window.location.href = 'https://gu-eth.notion.site/Eleven-en-b950d66db2264370bba043b996207e81?pvs=4';
+      } else {
+        alert('Senha incorreta!');
+      }
+    }
+  </script>
+</body>
+</html>
